@@ -2061,9 +2061,6 @@ struct net_device {
 	struct mini_Qdisc __rcu	*miniq_egress;
 #endif
 
-#ifdef CONFIG_NET_SCHED
-	DECLARE_HASHTABLE	(qdisc_hash, 4);
-#endif
 	/* These may be needed for future network-power-down code. */
 	struct timer_list	watchdog_timer;
 	int			watchdog_timeo;
